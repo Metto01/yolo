@@ -1,0 +1,25 @@
+---
+name: play app-Create yolo directories and username in app servers
+hosts: appservers
+become: yes
+gather_facts: yes 
+become_user: root
+vars:
+  
+
+  taks:
+
+-name: Create a username for yolo
+  user:
+   name: yolodm
+    group: users
+     shell: /bin/bash
+      home: /home/yolo
+
+-name: create a directory for apache yolo
+  file:
+   path: libvirt
+    owner: yolodm
+     group: users
+      state: present
+     enabled: true
