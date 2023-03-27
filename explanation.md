@@ -5,5 +5,9 @@
 * I have created a network under the name yolo 
 * Inside th yolo network I managed to connect two containers 'a5fbb5667359' and '124ec99a92cd'.respectively.
 * I was able to run both containers but the communication between the two containers didn't workout as expected.
+* I added to the root file an ansible folder with the yml playbook file in it.
+* I created a vagrant folder.
+* I created a vagrantfile.
+
 
 
