@@ -1,13 +1,21 @@
 ---
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
- name: yolo-deployment
+  name: yolo-backend.yaml
 spec:
- containers:
- - image: node:14.16.0 -alpine
-   name: yolo-backend.yaml
-   livenessProbe:
-     httpGet:
-       shell: /bin/bash/
-       port: 8080
+  selector:
+    matchLabels:
+      app: yolo
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: yolo
+    spec:
+      containers:
+      - name: backend
+        image: "node:14.16.0 -alpine3.13
+        env:
+        - name: "PORT"
+          value: "3001"
