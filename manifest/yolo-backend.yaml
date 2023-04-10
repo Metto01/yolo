@@ -3,18 +3,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: yolo-backend.yaml
-spec:
-  selector:
-    matchLabels:
-      app: yolo
-      department: sales
-  replicas: 3
-  template:
-    metadata:
-      labels:
-        app: yolo
-        department: sales
-    spec:
-      containers:
+spec: 
+  containers:
       - name: backend
-        image: "us-docker.pkg.dev/google-samples/containers/gke/yolo-app:2.0"
+        image: "node:14.16.0 -alpine3.13"
+      -name: "port"
+        value: 3001

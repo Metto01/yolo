@@ -1,15 +1,14 @@
 ---
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
- name: yolo-client
- annotations: 
-  service.beta.kubernetes.io/
+  name: client
 spec:
- containers:
- - image: node:14.16.0 -alpine
-   name: yolo-client.yaml
-   livenessProbe:
-     httpGet:
-       shell: /bin/bash/
-       port: 8080
+  type: LoadBalancer
+  selector:
+    app: products
+    department: sales
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 3000
