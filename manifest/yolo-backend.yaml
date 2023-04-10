@@ -7,15 +7,14 @@ spec:
   selector:
     matchLabels:
       app: yolo
+      department: sales
   replicas: 3
   template:
     metadata:
       labels:
         app: yolo
+        department: sales
     spec:
       containers:
       - name: backend
-        image: "node:14.16.0 -alpine3.13
-        env:
-        - name: "PORT"
-          value: "3001"
+        image: "us-docker.pkg.dev/google-samples/containers/gke/yolo-app:2.0"
