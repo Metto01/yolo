@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: yolo-deployment
+spec:
+ containers:
+ - image: node:14.16.0 -alpine
+   name: 
+   livenessProbe:
+     httpGet:
+       path: /
+       port: 8080
