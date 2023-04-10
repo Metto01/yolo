@@ -5,8 +5,8 @@ metadata:
 spec:
  containers:
  - image: node:14.16.0 -alpine
-   name: 
+   name: yolo-backend.yaml
    livenessProbe:
      httpGet:
-       path: /
+       shell: /bin/bash/
        port: 8080
