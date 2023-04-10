@@ -10,6 +10,8 @@
 * I created a vagrantfile.
 * I created a folder under the name manifest 
 * In the manifest folder I created two files under the name:yolo-deployment.yaml and yolo-services.yaml
+* I encountered a problem running the yaml files .
+* I wasn't  able to run the application at the end because of the problem mentioned above.
 
 
 
