@@ -8,6 +8,8 @@
 * I added to the root file an ansible folder with the yml playbook file in it.
 * I created a vagrant folder.
 * I created a vagrantfile.
+* I created a folder under the name manifest 
+* In the manifest folder I created two files under the name:yolo-deployment.yaml and yolo-services.yaml
 
 
 
