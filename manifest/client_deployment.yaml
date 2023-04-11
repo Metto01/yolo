@@ -37,5 +37,5 @@ spec:
 - name: CLIENT_HOST
              value: "10.24.7.108"
            - name: CLIENT_PORT
-            value: "8080"
+            value: "8008"
           
