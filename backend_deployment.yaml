@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+  #appName: yolobackend
+    serverClass: backend
+spec:
+  selector:
+    matchLabels:
+      app: backendapp
+      tier: backend
+      track: stable
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: backendapp
+        tier: backend
+        track: stable
+    spec:
+      containers:
+        - name: backendapp
+          image: keendra01/backendv1
+          ports:
+            - name: http
+              containerPort: 3001
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: server-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: standard
