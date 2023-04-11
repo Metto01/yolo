@@ -7,7 +7,7 @@ metadata:
     app: yoloclient
     component: frontend
   annotations:
-    description: "Service for frontend application"
+    description: "Service for client application"
 spec:
   type: LoadBalancer
   selector:

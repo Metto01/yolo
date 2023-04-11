@@ -33,9 +33,9 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 3000              
-#        env:
-#- name: CLIENT_HOST
-#             value: "10.24.7.108"
-#           - name: CLIENT_PORT
-#             value: "5000"
+       env:
+- name: CLIENT_HOST
+             value: "10.24.7.108"
+           - name: CLIENT_PORT
+            value: "8080"
           
