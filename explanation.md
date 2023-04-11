@@ -18,13 +18,13 @@
 
 # ** WEEK 8 IP:OCHESTRATION WITH KUBERNETES.
 * I created a folder under the name manifest
-# * * Manifest folder:
+## * * Manifest folder:
 In the manifest folder I created the following files inside:
- +client_deployment.yaml
- +client_service.yaml
- +backend_deployment.yaml
- +backend_services.yaml
- _ _Further Explanation on the work:
+ + client_deployment.yaml
+ + client_service.yaml
+ + backend_deployment.yaml
+ + backend_services.yaml
+* * Further Explanation on the work:
 * I had to go and make adjustments on my vagrant and ansible file to enable the running of my pods.
 * I changed  my vagrantbox from"generic/centos7" to "geerlingguy/ubuntu2004"
 * While running varant up,I encountered the following error(Error while connecting to Libvirt: Error making a connection to libvirt URI qemu:///system:
