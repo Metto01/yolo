@@ -13,8 +13,21 @@ WEEK 6 IP:TACKLING ANSIBLE&VAGRANT INSTRUMENTATION.
 * I created a vagrant folder.
 * I created a vagrantfile.
 WEEK 8 IP:OCHESTRATION WITH KUBERNETES.
-* I created a folder under the name manifest 
-Manifest folder:
+* I created a folder under the name manifest
+MANIFEST FOLDER:
+In the manifest folder I created the following files inside:
+ ~client_deployment.yaml
+ ~client_service.yaml
+ ~backend_deployment.yaml
+ ~backend_services.yaml
+Further Explanation on the work:
+* I had to go and make adjustments on my vagrant and ansible file to enable the running of my pods.
+* I changed  my vagrantbox from"generic/centos7" to "geerlingguy/ubuntu2004"
+* While running varant up,I encountered the following error(Error while connecting to Libvirt: Error making a connection to libvirt URI qemu:///system:
+Call to virConnectOpen failed: Failed to connect socket to '/var/run/libvirt/libvirt-sock': Permission denied) which has made it hard to deploy my pods to kubernetes.
+
+
+
 
 
 
